@@ -111,7 +111,7 @@ export default {
                 '--slashWidth': `${this.slashWidth}px`,
                 '--slashLeftcolor': this.slashLeftcolor,
                 '--slashRightColor': this.slashRightColor,
-                '--slashPosition': `${this.slashPosition}%`
+                '--slashPosition': `calc(${this.slashPosition}% - 1px)`
             }
         }
 
@@ -121,7 +121,6 @@ export default {
     },
     mounted() {
         this.updateVars()
-        /* wwManager:start */
         const myObserver = new ResizeObserver(entries => {
             for (let entry of entries) {
                 this.updateVars()
@@ -129,7 +128,6 @@ export default {
 
         });
         myObserver.observe(this.$refs.slashContainer);
-        /* wwManager:end */
     },
     methods: {
         init() {
