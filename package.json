@@ -4,21 +4,21 @@
     "wewebPublic": "true",
     "repository": {
         "type": "git",
-        "url": "https://github.com/WeWeb-Public/wwSection"
+        "url": "https://github.com/WeWeb-Public/builder_with_slash"
     },
-    "version": "0.0.6",
+    "version": "0.0.7",
     "private": true,
     "scripts": {
         "build": "weweb-build",
         "serve": "weweb-serve",
-        "upload": "weweb-upload"
+        "create-config": "weweb-config"
     },
     "dependencies": {
-        "vue": "^2.6.10"
+        "vue": "^2.6.11"
     },
     "devDependencies": {
         "resize-observer-polyfill": "^1.5.1",
-        "weweb-client": "^1.0.47"
+        "weweb-client": "^1.1.3"
     },
     "browserslist": [
         "> 1%",
